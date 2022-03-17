@@ -20,9 +20,7 @@ for i in range(1, 11):
     multi = i * int(num)
     mix = str(i) + " " + dic[num] + " are " + str(multi) + "\n"
     print(mix)
-    # make request to google to get synthesis
-
-
+    # voice assistant library code
     engine = pyttsx3.init()
-    engine.say("I will speak this text")
+    engine.say(mix)
     engine.runAndWait()
